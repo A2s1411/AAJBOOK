@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">AAJBook.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/add-book/">Donate Your Book Now!</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/book-list/">Find Your Book Now!</a>
+        </li>
+           </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/lobby/">Chat With Other Users Around the World!</a>
+        </li>
+<li>
+    <h5 class="text-dark">aajbook.comaajbook.comaajbook.com</h5>
+</li>
+          <li>
+              <h3 class="text-white">HELLO! {{request.user}}</h3>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="p-3 mb-2 bg-secondary text-white">
+
+
+     <h1><u>Home</u></h1>
+
+
+
+
+
+<form>{% csrf_token %}</form>
+
+
+
+
+<br>
+<h1>What Is AAJBOOK.com</h1>
+    <br>
+    <br>
+
+    <h5>AajBook is a simple innovative online platform designed by and  for high schoolers to easily exchange textbooks, novels, and other study materials. By creating a community-driven space, AajBook allows students to list books they no longer need and request those required for their next courses or personal reading. The platform encourages cost-saving, sustainability, and collaborative learning, making it easier for students to access the resources they need. AajBook helps students connect, share, and succeed in their academic journeys.</h5>
+
+
+
+<br>
+    <br>
+   <h1>Want to Find/Donate Books?</h1>
+    <a class="btn btn-light" href="/lobby/" role="button">Talk to your peers now!</a>
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>AAJBOOK.com
+          </h6>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+
+          <p>
+            <a href="/privacypolicyandtermsandconditions/" class="text-reset">Privacy Policy and Terms and Conditions</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+
+          <p><i class="fas fa-home me-3"></i>Noida, India</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            aajbookotp@gmail.com
+          </p>
+
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+
+
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

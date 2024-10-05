@@ -1,0 +1,32 @@
+{% extends "Auth/main.html" %}
+
+{% block content %}
+
+<h1>Login</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+     <div class="mb-3">
+
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter username" name="username">
+
+  </div>
+<div class="mb-3">
+
+    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email Address" name="email">
+
+  </div>
+  <div class="mb-3">
+
+    <input type="password" class="form-control" placeholder="Password" name="passwd">
+  </div>
+    <button type="submit" class="btn btn-secondary">Log In!</button>
+</form>
+
+{% for message in messages %}
+<p id="messages">{{message}}</p>
+
+{% endfor %}
+{{form.errors}}
+{{Error}}
+{% endblock %}
+
